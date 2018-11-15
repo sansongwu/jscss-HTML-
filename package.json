@@ -1,0 +1,19 @@
+{
+  "name": "load-test",
+  "version": "1.0.0",
+  "description": "通过建立本地服务器  延迟js css 加载时间  配合本地js  css 代码  观察加载js css 对html解析的影响",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sansongwu/jscss-HTML-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sansongwu/jscss-HTML-/issues"
+  },
+  "homepage": "https://github.com/sansongwu/jscss-HTML-#readme"
+}

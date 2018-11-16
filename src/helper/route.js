@@ -34,10 +34,38 @@ module.exports = async (req, res, path) => {
                 setTimeout(() => {
                 fs.createReadStream(path).pipe(res)
                 }, 1000)
-            } else {
-                fs.createReadStream(path).pipe(res)
+                return
             }
+
+            if (fileName === 'yellow') {
+                setTimeout(() => {
+                fs.createReadStream(path).pipe(res)
+                }, 5000)
+                return
+            }
+            if (fileName === 'blue') {
+                setTimeout(() => {
+                fs.createReadStream(path).pipe(res)
+                }, 10000)
+                return
+            }
+            if (fileName === 'red') {
+                setTimeout(() => {
+                fs.createReadStream(path).pipe(res)
+                }, 15000)
+                return
+            }
+            if (fileName === 'green') {
+                setTimeout(() => {
+                fs.createReadStream(path).pipe(res)
+                }, 20000)
+                return
+            }
+
+
+            fs.createReadStream(path).pipe(res)
             
+        
         }
     } catch (err) {
         res.setCode = 404
